@@ -1,0 +1,22 @@
+Feature Set,Algorithm,Clusters,Noise Points,Silhouette Score,Davies-Bouldin Index,Calinski-Harabasz Score
+2D (Income & Spending Score),K-Means (k=5),5,0,0.5547,0.5722,248.65
+2D (Income & Spending Score),"Hierarchical (Ward, k=5)",5,0,0.5538,0.5779,244.41
+2D (Income & Spending Score),"Hierarchical (Complete, k=5)",5,0,0.5531,0.568,247.21
+2D (Income & Spending Score),DBSCAN (eps=0.45),2,9,0.3864,0.7804,83.37
+2D (Income & Spending Score),"Gaussian Mixture (GMM, k=5)",5,0,0.5537,0.576,244.94
+2D (Income & Spending Score),Mean Shift,1,0,,,
+2D (Income & Spending Score),Spectral Clustering (k=5),5,0,0.4881,0.5803,183.52
+"3D (Age, Income & Spending Score)",K-Means (k=5),5,0,0.4166,0.8746,125.1
+"3D (Age, Income & Spending Score)","Hierarchical (Ward, k=5)",5,0,0.39,0.9163,107.83
+"3D (Age, Income & Spending Score)","Hierarchical (Complete, k=5)",5,0,0.4,0.8848,121.44
+"3D (Age, Income & Spending Score)",DBSCAN (eps=0.8),1,5,,,
+"3D (Age, Income & Spending Score)","Gaussian Mixture (GMM, k=5)",5,0,0.3764,0.8902,105.02
+"3D (Age, Income & Spending Score)",Mean Shift,1,0,,,
+"3D (Age, Income & Spending Score)",Spectral Clustering (k=5),5,0,0.3287,1.0292,76.98
+"4D (Gender, Age, Income & Spending Score)",K-Means (k=5),5,0,0.3144,1.1364,70.39
+"4D (Gender, Age, Income & Spending Score)","Hierarchical (Ward, k=5)",5,0,0.287,1.2198,64.47
+"4D (Gender, Age, Income & Spending Score)","Hierarchical (Complete, k=5)",5,0,0.2433,1.3777,56.86
+"4D (Gender, Age, Income & Spending Score)",DBSCAN (eps=0.8),5,12,0.1586,1.1155,34.34
+"4D (Gender, Age, Income & Spending Score)","Gaussian Mixture (GMM, k=5)",5,0,0.2216,1.2106,45.82
+"4D (Gender, Age, Income & Spending Score)",Mean Shift,1,0,,,
+"4D (Gender, Age, Income & Spending Score)",Spectral Clustering (k=5),5,0,0.2725,1.0498,57.22
