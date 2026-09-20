@@ -139,55 +139,6 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Top KPI Summary Cards
-kpi1, kpi2, kpi3, kpi4, kpi5 = st.columns(5)
-
-with kpi1:
-    st.markdown("""
-    <div class="metric-card">
-        <div class="metric-title">Total Customers</div>
-        <div class="metric-value">{:,}</div>
-        <div class="metric-sub">✓ 100% Complete Records</div>
-    </div>
-    """.format(len(df)), unsafe_allow_html=True)
-
-with kpi2:
-    st.markdown("""
-    <div class="metric-card">
-        <div class="metric-title">Gender Ratio</div>
-        <div class="metric-value">{:.0f}% <span style="font-size: 1rem; color: #ec4899;">♀</span> / {:.0f}% <span style="font-size: 1rem; color: #3b82f6;">♂</span></div>
-        <div class="metric-sub">Female Predominant</div>
-    </div>
-    """.format((df['gender']=='Female').mean()*100, (df['gender']=='Male').mean()*100), unsafe_allow_html=True)
-
-with kpi3:
-    st.markdown("""
-    <div class="metric-card">
-        <div class="metric-title">Avg Annual Income</div>
-        <div class="metric-value">${:.1f}k</div>
-        <div class="metric-sub">Range: ${}k - ${}k</div>
-    </div>
-    """.format(df['annual_income'].mean(), df['annual_income'].min(), df['annual_income'].max()), unsafe_allow_html=True)
-
-with kpi4:
-    st.markdown("""
-    <div class="metric-card">
-        <div class="metric-title">Avg Spending Score</div>
-        <div class="metric-value">{:.1f}<span style="font-size: 1rem; color: #64748b;">/100</span></div>
-        <div class="metric-sub">Median: {:.0f} pts</div>
-    </div>
-    """.format(df['spending_score'].mean(), df['spending_score'].median()), unsafe_allow_html=True)
-
-with kpi5:
-    st.markdown("""
-    <div class="metric-card">
-        <div class="metric-title">Avg Customer Age</div>
-        <div class="metric-value">{:.1f} <span style="font-size: 1rem; color: #64748b;">yrs</span></div>
-        <div class="metric-sub">Range: {} - {} yrs</div>
-    </div>
-    """.format(df['age'].mean(), df['age'].min(), df['age'].max()), unsafe_allow_html=True)
-
-st.write("")
 
 # Navigation Tabs
 tabs = st.tabs([
